@@ -196,7 +196,6 @@ logs-distributor/
 ├── config/config.go                  # Configuration constants
 ├── models/models.go                  # Data structures
 └── distributor/
-    ├── distributor.go                # Main orchestrator
     ├── interfaces/                   # 📝 All abstractions
     │   ├── distributor.go            # Main service interface
     │   ├── load_balancer.go          # Load balancing interface
@@ -206,6 +205,7 @@ logs-distributor/
     │   ├── packet_processor.go       # Processing interface
     │   └── packet_validator.go       # Validation interface
     ├── implementations/              # 🔧 Concrete implementations
+    ├── ├── distributor.go            # Main orchestrator
     │   ├── load_balancer.go          # Weighted round-robin
     │   ├── health_monitor.go         # Health checking
     │   ├── persistence_manager.go    # File-based persistence
